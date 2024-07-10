@@ -50,7 +50,8 @@ let numbers = document.getElementById('numbers').innerHTML = num;
             }
     
         }
-      
+        // mostro i numeri indovinati nel dom
+        document.getElementById('numbers').innerHTML = `hai indovinato questi numeri ${numeri_indovinati.length} i numeri sono ${numeri_indovinati}`;
     } , 31000)
 
 
