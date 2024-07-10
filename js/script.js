@@ -17,6 +17,21 @@ const contenitorenumeri = [];
 } 
 // richiamo la mia funzione per farla funzionare
 number();
+// faccio una variabile per restituire il valore della mia funzione
+let num = number();
+// mostro i numeri nel dom
+let numbers = document.getElementById('numbers').innerHTML = num;
+
+
+// creo un timer con la funzione setimeout
+ let clock = setTimeout (function numero (){
+    // i numeri generati spariscono dopo 30 secondi
+     numbers = document.getElementById('numbers').innerHTML = '';
+
+
+} , 30000)
+
+
 
 
 
