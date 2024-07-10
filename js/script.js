@@ -13,7 +13,7 @@ const contenitorenumeri = [];
             contenitorenumeri.push(randomNumbers);
         }
     }
-    
+    return contenitorenumeri;
 } 
 // richiamo la mia funzione per farla funzionare
 number();
