@@ -31,7 +31,27 @@ let numbers = document.getElementById('numbers').innerHTML = num;
 
 } , 30000)
 
-
+    // creo un setimeout per il deley delle prompt 
+    const utente = setTimeout (function numero (){
+        // creo un arrey per i numeri dell'utente
+        const numeriutente = [];
+        // creo un arrey per i numeri indovinati
+        let numeri_indovinati = [];
+        // creo ciclo for cosi che l'utente possa inserire i suoi numeri
+     for(i = 0; i< 5; i++){
+          // chiedo all'utente di inserire il numero 5 volte
+          numeriutente.push(parseInt(prompt('inserisci il tuo numero')));
+    
+        }
+          // controllo che i numeri che ho inserito ce ne qualcuno uguale nel mio arrey di numeri casuali
+        for(let i = 0; i < 5; i++){
+            if(num.includes(numeriutente[i])){
+                numeri_indovinati.push(numeriutente[i]);
+            }
+    
+        }
+      
+    } , 31000)
 
 
 
